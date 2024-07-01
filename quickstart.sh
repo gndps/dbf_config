@@ -8,3 +8,4 @@ bfcli config https://github.com/gndps/dbf_config.git
 
 # initialize default profile
 bfcli init default
+source $HOME/.bash_profile
