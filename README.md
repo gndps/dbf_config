@@ -4,7 +4,10 @@ Please visit https://github.com/gndps/dot_bash_files for more details
 
 # Quickstart
 ```
-bash <(curl -s https://raw.githubusercontent.com/gndps/dbf_config/main/quickstart.sh)
+bash <(curl -s https://raw.githubusercontent.com/gndps/dbf_config/main/quickstart.sh) && source source $HOME/.bash_profile
+echo
+echo "Available packages:"
+cat $BASH_FILES_DIR/init/.bflist
 ```
 
 # How to use
