@@ -10,14 +10,6 @@
             "url": "https://github.com/gndps/generic_envs.git",
             "enable_auto_pull": true,
             "enable_auto_push": true
-        },
-        {
-            "name": "misc",
-            "url": "git@github.com:gndps/bash_files_misc.git"
-        },
-        {
-            "name": "bash_files_dp",
-            "url": "git@github.com:gndps/bash_files_dp.git"
         }
   ]
 }
