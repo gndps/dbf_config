@@ -10,6 +10,11 @@
             "url": "https://github.com/gndps/generic_envs.git",
             "enable_auto_pull": true,
             "enable_auto_push": true
+        },
+        {
+            "name": "repo with custom cloning",
+            "url": "this url dont matter because of clone command",
+            "clone_command": "echo this overrides default git clone <url>, this can also be a pointer to a whole file in config"
         }
   ]
 }
