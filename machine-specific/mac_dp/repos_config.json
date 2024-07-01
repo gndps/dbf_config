@@ -1,0 +1,25 @@
+{
+    "defaults": {
+        "enable_auto_pull": true,
+        "enable_auto_push": true,
+        "source_bash_files": true
+  },
+    "repos": [
+        {
+            "name": "generic_envs",
+            "url": "https://github.com/gndps/generic_envs.git"
+        },
+        {
+            "name": "misc",
+            "url": "git@github.com:gndps/bash_files_misc.git"
+        },
+        {
+            "name": "misc",
+            "url": "git@github.com:gndps/repo_to_txt.git"
+        },
+        {
+            "name": "bash_files_dp",
+            "url": "git@github.com:gndps/bash_files_dp.git"
+        }
+  ]
+}

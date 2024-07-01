@@ -1,0 +1,15 @@
+[macos]
+echo "Mac OS specific files"
+
+[mac_dp]
+echo "Installing profile mac_dp"
+export BF_REPOS_CONFIG_FILE_OVERWRITE="$BASH_FILES_DIR/config/machine-specific/mac_dp/repos_config.json"
+
+[vm1]
+echo "test"
+echo "test2"
+
+[linux]
+LINUX_ROOT="$BASH_FILES_DIR/config/os-specific/linux"
+LINUX_SAMPLE_FILE="$LINUX_ROOT/linux_sample.sh"
+chmod +x $LINUX_SAMPLE_FILE && $LINUX_SAMPLE_FILE
