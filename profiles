@@ -12,7 +12,7 @@ echo "Mac OS specific files"
 
 [mac_dp]
 echo "Installing profile mac_dp"
-export BF_REPOS_CONFIG_FILE_OVERWRITE="$BASH_FILES_DIR/config/machine-specific/mac_dp/repos_config.json"
+# export BF_REPOS_CONFIG_FILE_OVERWRITE="$BASH_FILES_DIR/config/machine-specific/mac_dp/repos_config.json"
 
 [vm1]
 echo "test"

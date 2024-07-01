@@ -12,9 +12,12 @@
             "enable_auto_push": true
         },
         {
-            "name": "repo with custom cloning",
-            "url": "this url dont matter because of clone command",
-            "clone_command": "echo this overrides default git clone <url>, this can also be a pointer to a whole file in config"
+            "name": "misc",
+            "url": "git@github.com:gndps/bash_files_misc.git"
+        },
+        {
+            "name": "bash_files_dp",
+            "url": "git@github.com:gndps/bash_files_dp.git"
         }
   ]
 }
