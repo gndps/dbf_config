@@ -1,7 +1,7 @@
 {
     "defaults": {
         "enable_auto_pull": true,
-        "enable_auto_push": false,
+        "enable_auto_push": true,
         "source_bash_files": true
   },
     "repos": [
@@ -18,6 +18,10 @@
         {
             "name": "bash_files_dp",
             "url": "git@github.com:gndps/bash_files_dp.git"
+        },
+        {
+            "name": "mackup",
+            "url": "git@github.com:gndps/mackup.git"
         }
   ]
 }
