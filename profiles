@@ -11,16 +11,11 @@ echo "== Initializing with default profile =="
 echo "Installing profile mac_dp"
 # export BF_REPOS_CONFIG_FILE_OVERWRITE="$BASH_FILES_DIR/config/machine-specific/mac_dp/repos_config.json"
 
-[macos_init]
+[mackup_mac]
 echo "Mac OS specific files"
 brew install mackup
 
-[ubuntu_setup]
-sudo apt update
-sudo apt install pipx -y
-pipx ensurepath
-
-[linux_init]
+[mackup_linux]
 # mackup
-sudo pipx install mackup
+sudo python3 -m pip install mackup
 
