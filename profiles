@@ -22,5 +22,5 @@ pipx ensurepath
 
 [linux_init]
 # mackup
-pipx install mackup
+sudo pipx install mackup
 
