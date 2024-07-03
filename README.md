@@ -4,7 +4,7 @@ Please visit https://github.com/gndps/dot_bash_files for more details
 
 # Quickstart
 ```
-bash <(curl -s https://raw.githubusercontent.com/gndps/dbf_config/personal/quickstart.sh)
+bash <(curl -s https://raw.githubusercontent.com/gndps/dbf_config/personal/quickstart.sh) && source ~/.bash_profile
 ```
 
 # How to use

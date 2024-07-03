@@ -18,6 +18,7 @@ brew install mackup
 [ubuntu_setup]
 sudo apt update
 sudo apt install pipx -y
+pipx ensurepath
 
 [linux_init]
 # mackup
