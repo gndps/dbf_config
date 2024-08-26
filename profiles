@@ -14,8 +14,14 @@ echo "Installing profile mac_dp"
 [mackup_mac]
 echo "Mac OS specific files"
 brew install mackup
+brew install koekeishiya/formulae/yabai
 
-[mackup_linux]
-# mackup
+[ubuntu]
+# install mackup if command not found
 sudo python3 -m pip install mackup
+pipx install uv
+
+# Append to .bashrc
+# source "$BASH_FILES_DIR/config/os-specific/ubuntu/append_to_file_function"
+# append_to_file "$BASH_FILES_DIR/config/os-specific/ubuntu/append_rc" "$HOME/.bashrc" "# APPEND RC START" "# APPEND RC END"
 

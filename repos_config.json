@@ -2,7 +2,8 @@
     "defaults": {
         "enable_auto_pull": true,
         "enable_auto_push": true,
-        "source_bash_files": true
+        "source_bash_files": "true/false - not implemented yet",
+        "comment": "all defaults can be overridden by each repo"
   },
     "repos": [
         {
@@ -22,6 +23,10 @@
         {
             "name": "mackup",
             "url": "git@github.com:gndps/mackup.git"
+        },
+        {
+            "name": "appendrc",
+            "url": "git@github.com:gndps/appendrc.git"
         }
   ]
 }
