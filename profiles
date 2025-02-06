@@ -1,12 +1,13 @@
 [default]
-# echo
-source $BASH_FILES_DIR/config/local_source_paths
 echo "default profile applied 🐶✨✨"
 # echo
 # echo "default profile doesn't install anything other than cloning and sourcing repos using repos_config.json"
 # echo "Profiles initializations allow changing machine specific or os specific behaviour by enabling these features:"
 # echo "custom repos_config.json according to machine or os type"
 # echo "custom initialization code etc"
+
+[mac_dp_local_packages]
+source $BASH_FILES_DIR/config/local_source_paths
 
 [brew]
 echo "Installing profile brew"
