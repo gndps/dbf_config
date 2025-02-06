@@ -1,0 +1,33 @@
+source "${BASH_SOURCE%/*}/brew_wrapper"
+
+safebrew tree
+safebrew parallel
+safebrew MonitorControl
+safebrew erdtree
+
+# brew uninstaller
+brew tap beeftornado/rmtree
+# Use: brew rmtree <package>
+
+# sketchybar
+# brew tap FelixKratz/formulae
+# safebrew sketchybar
+# mkdir -p ~/.config/sketchybar/plugins
+# cp $(brew --prefix)/share/sketchybar/examples/sketchybarrc ~/.config/sketchybar/sketchybarrc
+# cp -r $(brew --prefix)/share/sketchybar/examples/plugins/ ~/.config/sketchybar/plugins/
+# brew services start sketchybar
+
+safebrew gitui
+
+# oh my posh
+safebrew jandedobbeleer/oh-my-posh/oh-my-posh
+
+# nerd fonts
+safebrew font-hack-nerd-font
+safebrew --cask font-caskaydia-mono-nerd-font
+
+# display keys while typing for recording
+safebrew --cask keycastr
+
+safebrew terminal-notifier
+safebrew cliclick

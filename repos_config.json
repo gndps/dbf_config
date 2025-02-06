@@ -2,7 +2,7 @@
     "defaults": {
         "enable_auto_pull": true,
         "enable_auto_push": true,
-        "source_bash_files": "true/false - not implemented yet",
+        "source_bash_files": false,
         "comment": "all defaults can be overridden by each repo"
   },
     "repos": [
@@ -10,23 +10,35 @@
             "name": "generic_envs",
             "url": "https://github.com/gndps/generic_envs.git",
             "enable_auto_pull": true,
-            "enable_auto_push": true
+            "enable_auto_push": true,
+            "source_bash_files": true
         },
         {
             "name": "misc",
-            "url": "git@github.com:gndps/bash_files_misc.git"
+            "url": "git@github.com:gndps/bash_files_misc.git",
+            "source_bash_files": true
         },
         {
             "name": "bash_files_dp",
-            "url": "git@github.com:gndps/bash_files_dp.git"
+            "url": "git@github.com:gndps/bash_files_dp.git",
+            "source_bash_files": true
         },
         {
             "name": "mackup",
-            "url": "git@github.com:gndps/mackup.git"
+            "url": "git@github.com:gndps/mackup.git",
+            "source_bash_files": true
         },
         {
             "name": "appendrc",
-            "url": "git@github.com:gndps/appendrc.git"
+            "url": "git@github.com:gndps/appendrc.git",
+            "source_bash_files": true
+        },
+        {
+            "name": "bash-ai",
+            "url": "https://github.com/gndps/bash-ai",
+            "enable_auto_pull": false,
+            "enable_auto_push": false,
+            "source_bash_files": false
         }
   ]
 }

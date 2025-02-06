@@ -1,0 +1,28 @@
+append_to_file() {
+    local source_file="$1"
+    local target_file="$2"
+    local start_marker="$3"
+    local end_marker="$4"
+
+    # Check if source_file exists
+    if [[ ! -f "$source_file" ]]; then
+        echo "File $source_file not found."
+        return 1
+    fi
+
+    # Check if source_file is empty
+    if [[ ! -s "$source_file" ]]; then
+        echo "File $source_file is empty. No action taken."
+        return 0
+    fi
+
+    # Remove any existing appended content
+    if grep -q "$start_marker" "$target_file"; then
+        sed -i "/$start_marker/,/$end_marker/d" "$target_file"
+    fi
+
+    # Append new content
+    cat "$source_file" >> "$target_file"
+
+    echo "Content from $source_file has been appended to $target_file."
+}

@@ -1,15 +1,21 @@
 [default]
 # echo
-echo "== Initializing with default profile =="
+source $BASH_FILES_DIR/config/local_source_paths
+echo "default profile applied 🐶✨✨"
 # echo
 # echo "default profile doesn't install anything other than cloning and sourcing repos using repos_config.json"
 # echo "Profiles initializations allow changing machine specific or os specific behaviour by enabling these features:"
 # echo "custom repos_config.json according to machine or os type"
 # echo "custom initialization code etc"
 
-[mac_dp]
-echo "Installing profile mac_dp"
+[brew]
+echo "Installing profile brew"
+source $BASH_FILES_DIR/config/os-specific/mac/brew/brew_installs
 # export BF_REPOS_CONFIG_FILE_OVERWRITE="$BASH_FILES_DIR/config/machine-specific/mac_dp/repos_config.json"
+
+[pipx]
+pipx install ranger-fm
+pipx install uv
 
 [mackup_mac]
 echo "Mac OS specific files"

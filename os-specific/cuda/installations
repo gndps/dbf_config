@@ -1,0 +1,2 @@
+sudo apt install nvidia-cuda-toolkit nvtop -y
+sudo apt install ubuntu-drivers-common -y

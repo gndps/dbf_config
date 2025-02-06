@@ -1,0 +1,4 @@
+source $BASH_FILES_DIR/repo_init.sh
+
+init_repo $HOME/github/repo_to_txt
+init_repo $HOME/github/trim-mp3
