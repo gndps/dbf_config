@@ -6,6 +6,10 @@ echo "default profile applied 🐶✨✨"
 # echo "custom repos_config.json according to machine or os type"
 # echo "custom initialization code etc"
 
+[ohmyposh]
+source $BASH_FILES_DIR/config/ohmyposh/install_ohmyposh
+
+
 [mac_dp_local_packages]
 source $BASH_FILES_DIR/config/local_source_paths
 

@@ -1,0 +1,11 @@
+# install getnf
+echo "Installing getnf"
+curl -fsSL https://raw.githubusercontent.com/getnf/getnf/main/install.sh | bash
+
+# install fonts
+getnf -i FiraCode,FiraMono,Meslo
+
+# install oh my posh
+curl -s https://ohmyposh.dev/install.sh | bash -s
+
+posh install darkblood_ssh
