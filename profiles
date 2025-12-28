@@ -27,14 +27,18 @@ npm install -g @builder.io/ai-shell || echo "ai-shell install failed"
 # ai config set OPENAI_KEY=<your token>
 
 [mackup_mac]
-echo "Mac OS specific files"
+echo "Restoring Mackup on Mac"
 brew install mackup
 brew install koekeishiya/formulae/yabai
+ln -s ~/.bash_files/repos/mackup/.mackup.cfg ~/.mackup.cfg
+mackup restore --force
 
-[ubuntu]
-# install mackup if command not found
+[mackup_ubuntu]
+echo "Restoring Mackup on Ubuntu"
 sudo python3 -m pip install mackup
 pipx install uv
+ln -s ~/.bash_files/repos/mackup/.mackup.cfg ~/.mackup.cfg
+mackup restore --force
 
 # Append to .bashrc
 # source "$BASH_FILES_DIR/config/os-specific/ubuntu/append_to_file_function"
