@@ -32,13 +32,6 @@
             "name": "appendrc",
             "url": "git@github.com:gndps/appendrc.git",
             "source_bash_files": true
-        },
-        {
-            "name": "bash-ai",
-            "url": "https://github.com/gndps/bash-ai",
-            "enable_auto_pull": false,
-            "enable_auto_push": false,
-            "source_bash_files": false
         }
   ]
 }

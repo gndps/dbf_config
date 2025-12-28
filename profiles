@@ -22,6 +22,10 @@ source $BASH_FILES_DIR/config/os-specific/mac/brew/brew_installs
 pipx install ranger-fm
 pipx install uv
 
+[utils]
+npm install -g @builder.io/ai-shell || echo "ai-shell install failed"
+# ai config set OPENAI_KEY=<your token>
+
 [mackup_mac]
 echo "Mac OS specific files"
 brew install mackup
