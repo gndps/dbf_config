@@ -26,19 +26,10 @@ pipx install uv
 npm install -g @builder.io/ai-shell || echo "ai-shell install failed"
 # ai config set OPENAI_KEY=<your token>
 
-[mackup_mac]
-echo "Restoring Mackup on Mac"
-brew install mackup
-brew install koekeishiya/formulae/yabai
-ln -s ~/.bash_files/repos/mackup/.mackup.cfg ~/.mackup.cfg
-mackup restore --force
-
-[mackup_ubuntu]
-echo "Restoring Mackup on Ubuntu"
-sudo python3 -m pip install mackup
-pipx install uv
-ln -s ~/.bash_files/repos/mackup/.mackup.cfg ~/.mackup.cfg
-mackup restore --force
+[dotfiles]
+echo "Restoring dotfiles on Mac"
+brew install gndps/tap/dotfiles_sync
+dotfiles sync --dir $BASH_FILES_DIR/repos/dotfiles
 
 # Append to .bashrc
 # source "$BASH_FILES_DIR/config/os-specific/ubuntu/append_to_file_function"

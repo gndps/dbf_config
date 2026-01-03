@@ -32,6 +32,11 @@
             "name": "appendrc",
             "url": "git@github.com:gndps/appendrc.git",
             "source_bash_files": true
+        },
+        {
+            "name": "dotfiles",
+            "url": "git@github.com:gndps/dotfiles.git",
+            "source_bash_files": false
         }
   ]
 }
